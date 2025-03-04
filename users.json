@@ -1,0 +1,54 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "photo": "https://i.pravatar.cc/150?img=1"
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "photo": "https://i.pravatar.cc/150?img=2"
+        },
+        {
+            "id": 3,
+            "name": "Bob Johnson",
+            "photo": "https://i.pravatar.cc/150?img=3"
+        },
+        {
+            "id": 4,
+            "name": "Alice Brown",
+            "photo": "https://i.pravatar.cc/150?img=4"
+        },
+        {
+            "id": 5,
+            "name": "Tom Clark",
+            "photo": "https://i.pravatar.cc/150?img=5"
+        },
+        {
+            "id": 6,
+            "name": "Emma Wilson",
+            "photo": "https://i.pravatar.cc/150?img=6"
+        },
+        {
+            "id": 7,
+            "name": "Mike Davis",
+            "photo": "https://i.pravatar.cc/150?img=7"
+        },
+        {
+            "id": 8,
+            "name": "Sarah Lee",
+            "photo": "https://i.pravatar.cc/150?img=8"
+        },
+        {
+            "id": 9,
+            "name": "David Miller",
+            "photo": "https://i.pravatar.cc/150?img=9"
+        },
+        {
+            "id": 10,
+            "name": "Olivia Taylor",
+            "photo": "https://i.pravatar.cc/150?img=10"
+        }
+    ]
+}

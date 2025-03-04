@@ -12,12 +12,52 @@
 </head>
 <body>
 
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <p>Register within <span id="countdown">10:00</span> to get a discount!</p>
+            <button class="btn-apply-now" id="registerNow">Register now</button>
+            <div id="registrationForm" style="display: none;">
+                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="phone" placeholder="Phone number">
+                <button class="btn-apply-now" id="submitRegistration">Confirm registration</button>
+            </div>
+            <button class="btn-apply-now" id="registerLater">Register later</button>
+        </div>
+    </div>
  
   <header class="header">
     <div class="left-section">
         <a href="./"><img class="logo" src="./images/logo.png" alt="Logo"></a>
         <nav class="nav">
-            <a href="">Cards</a>
+           
+                <div class="dropdown">
+                    <button class="dropbtn">Cards ▽</button>
+                    <div class="dropdown-content">
+                        <div class="card-header">
+                            <div>
+                                <h2>Petal 1 Family</h2>
+                                <p>Build credit, simply</p>
+                            </div>
+                            <div class="cardimg">
+                            <img class="imgcard imgdropdown" src="./images/imgcard.png" alt="">
+                            </div>
+                           
+                           
+                        </div>
+                        <div class="card-header cardheader2">
+                            <div class="headercarddiv">
+                                <h2>Petal 2</h2>
+                                <p>All rewards, no fees</p>
+                            </div>
+                            <div class="cardimg">
+                               <img class="imgcard imgdropdown" src="./images/imgcard2.png" alt="">
+                               </div>
+                        </div>
+                    </div>
+                </div>
+
+
             <a href="">About</a>
             <a href="">App</a>
         </nav>
@@ -60,8 +100,28 @@
             <video class="video" src="./images/video-bankProject.mp4" autoplay muted loop>
 
             </video>
+
        
     </section>
+
+    <button class="btn-apply-now" id="showSectionBtn">See special offers</button>
+
+    
+    <div id="imageSection" class="hidden">
+        <div class="imagecontainer">
+            <img src="./images/specialcard.png" alt="Image 1" class="zoom">
+            <button class="btn-apply-now">Check offer</button>
+        </div>
+        <div class="imagecontainer">
+            <img src="./images/specialcard2.png" alt="Image 2" class="zoom">
+            <button class="btn-apply-now">Check offer</button>
+        </div>
+        <div class="imagecontainer">
+            <img src="./images/specialcard3.png" alt="Image 3" class="zoom">
+            <button class="btn-apply-now">Check offer</button>
+        </div>
+        <button class="btn-apply-now" id="closeSectionBtn">Close</button>
+    </div>
 
     <!-- Секція 2 -->
     <section class="section2">
@@ -94,8 +154,8 @@
                 <div class="feature-icon">
                     <img class="icon-img" src="./images/icon1.png" alt="Fee">
                 </div>
-                <div class="feature-text">Annual membership fee</div>
-                <div class="feature-value">No fees of any kind*</div>
+                <div class="feature-text">Annual membership</div>
+                <div class="feature-value">No fees*</div>
             </div>
             <div class="feature">
                 <div class="feature-icon">
@@ -128,8 +188,8 @@
     <!-- <div class="cards"> -->
 
         <div class="cardss">
-         <div class="card-header2">
-             <div>
+         <div class="card-header cardheader2">
+             <div class="headercarddiv">
                  <h2>Petal 1</h2>
                  <p>Build credit without an annual membership fee.</p>
              </div>
@@ -176,7 +236,7 @@
      <!-- <div class="cards"> -->
 
         <div class="cardss">
-         <div class="card-header2">
+         <div class="card-header cardheader2">
              <div>
                  <h2>Petal 1 Rise</h2>
                  <p>Build credit, simply.</p>
@@ -287,11 +347,11 @@
         <p class="p5">Stay up to date on your credit score in the app.</p>
         <div class="div5section">
             <div class="paginationimg">
-       <img class="imgsection5" src="./images/section5img1.png" alt="Image 1">
-       <img class="imgsection5" src="./images/section5img2.png" alt="Image 2">
-       <img class="imgsection5" src="./images/section5img3.png" alt="Image 3">
-       <img class="imgsection5" src="./images/section5img4.png" alt="Image 4">
-       <img class="imgsection5" src="./images/section5img5.jpg" alt="Image 5">
+       <img class="imgsection5" src="./images/section5img1.png" alt="Image 1" loading="lazy">
+       <img class="imgsection5" src="./images/section5img2.png" alt="Image 2" loading="lazy">
+       <img class="imgsection5" src="./images/section5img3.png" alt="Image 3" loading="lazy">
+       <img class="imgsection5" src="./images/section5img4.png" alt="Image 4" loading="lazy">
+       <img class="imgsection5" src="./images/section5img5.jpg" alt="Image 5" loading="lazy">
        <img class="imgsection5" src="./images/section5img6.jpg" alt="Image 6">
        <img class="imgsection5" src="./images/section5img7.jpg" alt="Image 7">
        <img class="imgsection5" src="./images/section5img8.jpg" alt="Image 8">
@@ -355,6 +415,63 @@
             </li>
         </ul>
     </section>
+
+     <!-- Секція 8 -->
+    <section class="section8">
+         
+     <h1 class="clients_text">Our Clients</h1>
+     <div class="user-list" id="user-list"></div>
+
+    </section>
+
+     <!-- Секція 9 -->
+     <section class="section9">
+        <p class="titlesection9">Exchange rate</p>
+        <div class="rate_block">
+            <div class="rate_item">
+                <button class="doll" id="get-rate-usd">GET USD RATE</button>
+                <p id="rate-info-usd"></p>
+            </div>
+            <div class="rate_item">
+                <button class="eur" id="get-rate-eur">GET EUR RATE</button>
+                <p id="rate-info-eur"></p>
+            </div>
+            <div class="rate_item">
+                <button class="chf" id="get-rate-chf">GET CHF RATE</button>
+                <p id="rate-info-chf"></p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Секція 10 -->
+    <section class="section10">
+        <h2 class="titlesection10">You can visit our new bank in:</h2>
+        <div class="timer" id="timer-1">
+    
+    
+            <div class="field">
+                <span class="value" data-value="days">11</span>
+                <span class="label">Days</span>
+            </div>
+            ​
+            <div class="field">
+                <span class="value" data-value="hours">11</span>
+                <span class="label">Hours</span>
+            </div>
+            ​
+            <div class="field">
+                <span class="value" data-value="mins">11</span>
+                <span class="label">Minutes</span>
+            </div>
+            ​
+            <div class="field">
+                <span class="value" data-value="secs">11</span>
+                <span class="label">Seconds</span>
+            </div>
+        </div>
+    </section>
+
     <!-- Секція 7 -->
      <section class="section7">
         <div class="containersection7">
@@ -386,7 +503,10 @@
             3 Cash back merchants and offers can vary throughout the year and are personalized. You must meet the individual offer terms to receive cash back. In the past six months, Petal members received at least one cash back offer from an advertised merchant.</p>
 </div>
      </section>
+
+    
     </main>
+
 
     <!-- Футер -->
     <footer class="footer">
@@ -414,9 +534,7 @@
         </div>
     </div>
 
-        <!-- <p class="textdiv1">Petal Card, Inc. NMLS #2295169. Click here for the NMLS Consumer Access database.</p>
-
-        <p>Petal</p> -->
+      
 
         <div class="footerdiv2">
 
@@ -445,6 +563,9 @@
         </div>
 
     </div>
+    <div class="footerdiv3">
+
+        
     <p class="petalfooter">Petal</p>
 
     <div class="social-icons">
@@ -465,6 +586,8 @@
         <a href="">Cardholder Agreements</a>
     </div>
     </div>
+
+</div>
     
     </footer>
 
